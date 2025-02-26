@@ -5,7 +5,7 @@
 | `crtime [filename]`                                            | crdate, modify date, letztes aufrufen einer Datei      |
 | `echo "Testnachricht" \| mail -s "Test Mail" test@example.com` | Send a testmail                                        |
 | `inxi`                                                         | Systeminformationen                                    |
-| `hostnamevtl set-hostname [hostname]`                          | Hostname ändern (ggf. noch in der /etc/hosts anpassen) |
+| `hostnamectl set-hostname [hostname]`                          | Hostname ändern (ggf. noch in der /etc/hosts anpassen) |
  
 ## Netzwerk
 

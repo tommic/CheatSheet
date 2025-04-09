@@ -19,3 +19,17 @@ dann docker installieren
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+
+# Commands
+
+Mit dem nachfolgendem Befehl kann man prüfen wie viel Speicher docker aktuell belegt:
+
+``` bash
+docker system df
+```
+
+Mit folgendem kann man viel ungenutztes wieder freigeben:
+
+``` bash
+docker system prune -af --volumes
+```

@@ -9,6 +9,12 @@
 | `sudo adduser [username]`                                      | Benutzer mit Home anlegen                                                                        |
 | `sudo usermod -aG sudo [username]`                             | Nutzer zu Sudo hinzufügen                                                                        |
 | `sudo chage -d 0 [username]`                                   | Datum des letzten Passwortwechsels auf 0, Benutzer muss beim nächsten Login sein Passwort ändern |
+| `timedatectl `                                                 | aktuelle Datums- und Zeitzoneneinstellung                                                        |
+| `timedatectl list-timezones`                                   | Zeitzonenliste abzurufen                                                                         |
+| `timedatectl set-timezone Europe/Berlin`                       | Zeitzone auf Berlin setzen                                                                       |
+
+
+
  
 ## Netzwerk
 

@@ -6,14 +6,22 @@
 | `echo "Testnachricht" \| mail -s "Test Mail" test@example.com` | Send a testmail                                                                                  |
 | `inxi`                                                         | Systeminformationen                                                                              |
 | `hostnamectl set-hostname [hostname]`                          | Hostname ändern (ggf. noch in der /etc/hosts anpassen)                                           |
-| `sudo adduser [username]`                                      | Benutzer mit Home anlegen                                                                        |
-| `sudo usermod -aG sudo [username]`                             | Nutzer zu Sudo hinzufügen                                                                        |
-| `sudo chage -d 0 [username]`                                   | Datum des letzten Passwortwechsels auf 0, Benutzer muss beim nächsten Login sein Passwort ändern |
 | `timedatectl `                                                 | aktuelle Datums- und Zeitzoneneinstellung                                                        |
 | `timedatectl list-timezones`                                   | Zeitzonenliste abzurufen                                                                         |
 | `timedatectl set-timezone Europe/Berlin`                       | Zeitzone auf Berlin setzen                                                                       |
 
 
+## User Management
+
+| Command                                                        | Beschreibung                                                                                     |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `sudo adduser [username]`                                      | Benutzer mit Home anlegen                                                                        |
+| `sudo usermod -aG sudo [username]`                             | Nutzer zu Sudo hinzufügen                                                                        |
+| `sudo chage -d 0 [username]`                                   | Datum des letzten Passwortwechsels auf 0, Benutzer muss beim nächsten Login sein Passwort ändern |
+| `sudo usermod -l [neuer_benutzername] [alter_benutzername]`    | Benutzer umbenennen                                                                              |
+| `sudo usermod -d /home/[neuer_benutzername] -m [neuer_benutzername]` | Home-Verzeichnis des Benutzers umbenennen und verschieben                                  |
+| `sudo groupmod -n [neue_gruppe] [alte_gruppe]`                 | Gruppe umbenennen                                                                                |
+| `id [neuer_benutzername]`                                      | Benutzer- und Gruppeninformationen überprüfen                                                    |
 
  
 ## Netzwerk
